@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: rgba(33, 37, 41, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto';
+    font-size: 40px;
+    color: #F8F6FA;
+}
+
+.text-center {
+    text-align: center;
+}

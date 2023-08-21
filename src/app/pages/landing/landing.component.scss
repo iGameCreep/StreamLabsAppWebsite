@@ -1,0 +1,26 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px;
+    border: none;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    color: #d6d8e1;
+    border-radius: 5px;
+    font-family: 'Roboto';
+}
+
+.btn-primary {
+    background-color: #2b5a92;
+}
+
+.btn-container {
+    text-align: center;
+}

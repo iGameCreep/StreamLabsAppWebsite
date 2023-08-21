@@ -1,0 +1,11 @@
+<section class="page">
+    <div *ngIf="!data">
+        <h1>Retrieving informations, Please wait...</h1>
+    </div>
+    <div *ngIf="data" class="card">
+        <h1>Success !</h1>
+        <h2>Access Token: {{data.access_token}}</h2>
+        <h2>Refresh Token: {{data.refresh_token}}</h2>
+        <h2>Expires On: {{data.expires_in | date:'short'}}</h2>
+    </div>
+</section>
