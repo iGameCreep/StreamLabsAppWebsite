@@ -1,13 +1,41 @@
+@import 'ngx-toastr/toastr';
+
 body {
     background-color: rgba(33, 37, 41, 1);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto';
     font-size: 40px;
     color: #F8F6FA;
 }
 
 .text-center {
     text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px;
+    border: none;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    color: #d6d8e1;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #2b5a92;
+
+    &:hover {
+        background-color: #456fa3;
+        cursor: pointer;
+    }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
