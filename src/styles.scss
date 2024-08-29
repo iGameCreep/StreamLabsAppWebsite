@@ -1,41 +1,55 @@
-@import 'ngx-toastr/toastr';
+@import "ngx-toastr/toastr";
 
-body {
-    background-color: rgba(33, 37, 41, 1);
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 40px;
-    color: #F8F6FA;
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
+body {
+  background-color: rgba(33, 37, 41, 1);
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .btn {
-    display: inline-block;
-    padding: 15px;
-    border: none;
-    width: 200px;
-    text-decoration: none;
-    text-align: center;
-    color: #d6d8e1;
-    border-radius: 5px;
-    margin: 5px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .btn-primary {
-    background-color: #2b5a92;
+  background-color: #007bff;
+
+  &:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+  }
+}
+
+.btn-danger {
+    background-color: #dc3545;
 
     &:hover {
-        background-color: #456fa3;
+        background-color: #c82333;
         cursor: pointer;
     }
 }
 
 .btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

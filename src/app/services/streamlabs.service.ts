@@ -19,9 +19,9 @@ export class StreamLabsService {
       grant_type: 'authorization_code',
       client_id: environment.streamlabs_app_id,
       client_secret: environment.streamlabs_app_secret,
-      redirect_uri: `http://${environment.app_domain}/auth`,
+      redirect_uri: `${environment.app_domain}/auth`,
       code
     }
-    return this.http.post<ITokenData>(`http://${environment.app_domain}/api/v2.0/token`, body, { headers });
+    return this.http.post<ITokenData>(`${environment.app_domain}/api/v2.0/token`, body, { headers });
   }
 }

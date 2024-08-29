@@ -1,0 +1,7 @@
+<app-popup-modal>
+    <app-input-bar [placeholder]="placeHolder" (keyUp)="onKeyUp($event)"></app-input-bar>
+    <ng-content></ng-content>
+    <button class="btn btn-primary btn-validate" (click)="confirmResult()">
+        Validate
+    </button>
+</app-popup-modal>
